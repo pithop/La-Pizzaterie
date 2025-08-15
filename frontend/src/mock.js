@@ -12,11 +12,18 @@ export const restaurantInfo = {
   hours: "Fermé actuellement, ouvre à 11h"
 };
 
-export const heroImages = {
-  restaurant: "https://images.unsplash.com/photo-1668686376776-df5a9b838896?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwxfHxpdGFsaWFuJTIwcGl6emVyaWElMjByZXN0YXVyYW50fGVufDB8fHx8MTc1NTIyNTczM3ww&ixlib=rb-4.1.0&q=85",
-  pizza1: "https://images.unsplash.com/photo-1751200884901-c1c6f43ae1d6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwyfHxhcnRpc2FuJTIwcGl6emF8ZW58MHx8fHwxNzU1MjI1NzQxfDA&ixlib=rb-4.1.0&q=85",
-  pizza2: "https://images.unsplash.com/photo-1739156202304-5e9e55ad8d46?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwzfHxhcnRpc2FuJTIwcGl6emF8ZW58MHx8fHwxNzU1MjI1NzQxfDA&ixlib=rb-4.1.0&q=85",
-  pizza3: "https://images.unsplash.com/photo-1563245738-9169ff58eccf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwxfHxhcnRpc2FuJTIwcGl6emF8ZW58MHx8fHwxNzU1MjI1NzQxfDA&ixlib=rb-4.1.0&q=85"
+export const heroMedia = {
+  restaurant: {
+    type: "video",
+    src: "/videos/pizzeria-video.mp4"
+  },
+  pizza1: "https://images.unsplash.com/photo-1563245738-9169ff58eccf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwxfHxhcnRpc2FuJTIwcGl6emF8ZW58MHx8fHwxNzU1MjI1NzQxfDA&ixlib=rb-4.1.0&q=85",
+  pizza2: "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?q=80&w=1935&auto=format&fit=crop",
+  pizza3: "https://images.unsplash.com/photo-1739156202304-5e9e55ad8d46?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwzfHxhcnRpc2FuJTIwcGl6emF8ZW58MHx8fHwxNzU1MjI1NzQxfDA&ixlib=rb-4.1.0&q=85",
+  pizza4: "https://images.unsplash.com/photo-1552539618-7eec9b4d1796?q=80&w=2148&auto=format&fit=crop",
+  // MODIFICATION ICI : Remplacement du lien pour l'image "pasta1" par le vôtre
+  pasta1: "/images/pasta1.jpg", // Chemin local vers l'image de pâtes
+  dessert1: "https://images.unsplash.com/photo-1567197937780-3523a5783562?q=80&w=1974&auto=format&fit=crop",
 };
 
 export const pizzaMenu = [

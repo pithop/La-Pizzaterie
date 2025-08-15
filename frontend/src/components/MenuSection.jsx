@@ -1,7 +1,8 @@
+// frontend/src/components/MenuSection.jsx
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Badge } from './ui/badge';
-import { pizzaMenu, supplements, heroImages } from '../mock';
+import { pizzaMenu, supplements, heroMedia } from '../mock';
 
 const MenuSection = () => {
   return (
@@ -10,46 +11,43 @@ const MenuSection = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 font-serif">
-            Nos Pizzas Tomate
+            Notre Menu
           </h2>
           <p className="text-xl text-gray-700 max-w-2xl mx-auto">
-            Base sauce tomate maison et mozzarella fiordilatte.
+            Pizzas, pâtes ou desserts, tout est fait maison avec passion.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
-          {/* Pizza Images */}
-          <div className="space-y-6">
-            <div className="grid grid-cols-1 gap-6">
-              <div className="relative overflow-hidden rounded-2xl shadow-2xl">
-                <img
-                  src={heroImages.pizza1}
-                  alt="Pizza artisanale"
-                  className="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-              </div>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="relative overflow-hidden rounded-xl shadow-lg">
-                  <img
-                    src={heroImages.pizza2}
-                    alt="Pizza gourmande"
-                    className="w-full h-40 object-cover hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <div className="relative overflow-hidden rounded-xl shadow-lg">
-                  <img
-                    src={heroImages.pizza3}
-                    alt="Pizzas variées"
-                    className="w-full h-40 object-cover hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-              </div>
+          {/* Pizza Images - MODIFICATION de la grille d'images */}
+          <div className="grid grid-cols-2 grid-rows-2 gap-4 h-[34rem]">
+            <div className="relative col-span-1 row-span-2 overflow-hidden rounded-2xl shadow-2xl">
+              <img
+                src={heroMedia.pizza1}
+                alt="Pizza artisanale"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div className="relative overflow-hidden rounded-2xl shadow-lg">
+              <img
+                src={heroMedia.pasta1}
+                alt="Plat de pâtes"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div className="relative overflow-hidden rounded-2xl shadow-lg">
+              <img
+                src={heroMedia.pizza4}
+                alt="Pizza en gros plan"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              />
             </div>
           </div>
 
+
           {/* Menu Table */}
           <div className="space-y-8">
+            {/* ... (le reste du code de la table de menu et des suppléments ne change pas) */}
             <Card className="bg-white shadow-2xl border-0">
               <CardHeader className="bg-gradient-to-r from-red-600 to-red-700 text-white rounded-t-lg">
                 <CardTitle className="text-2xl font-bold text-center">Menu des Pizzas</CardTitle>
@@ -66,8 +64,8 @@ const MenuSection = () => {
                     </thead>
                     <tbody>
                       {pizzaMenu.map((pizza, index) => (
-                        <tr 
-                          key={index} 
+                        <tr
+                          key={index}
                           className={`border-b hover:bg-red-50 transition-colors duration-200 ${
                             index % 2 === 0 ? 'bg-white' : 'bg-gray-50'
                           }`}
