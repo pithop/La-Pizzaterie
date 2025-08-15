@@ -58,8 +58,8 @@ const MenuSection = () => {
                     <thead>
                       <tr className="bg-gray-50 border-b">
                         <th className="px-6 py-4 text-left font-semibold text-gray-900">Pizza</th>
-                        <th className="px-4 py-4 text-center font-semibold text-gray-900">Taille 2km</th>
-                        <th className="px-4 py-4 text-center font-semibold text-gray-900">Taille 3km</th>
+                        <th className="px-4 py-4 text-center font-semibold text-gray-900">Taille 29cm</th>
+                        <th className="px-4 py-4 text-center font-semibold text-gray-900">Taille 33cm</th>
                       </tr>
                     </thead>
                     <tbody>
